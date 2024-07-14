@@ -193,11 +193,11 @@ displayMealDetails(meal) {
 
 
        let box = ` 
-          <div class="col-lg-3 col-md-4 col-sm-10 text-center" >
+          <div class="col-lg-3 col-md-4 col-sm-10 " >
                  <img src="${meal.strMealThumb}" class="w-100" alt="">
                 <h2>${meal.strMeal}</h2>
             </div>
-            <div class="col-lg-9 col-md-8 col-sm-10 text-center ">
+            <div class="col-lg-9 col-md-8 col-sm-10  ">
              <h2>Instructions</h2>
              <p>${meal.strInstructions}</p>
             <p>Area : ${meal.strArea}</p> 
