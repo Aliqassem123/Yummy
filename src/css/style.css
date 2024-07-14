@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loading{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #494848a1;
+    z-index: 9999;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite
+  }
+  .loader::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    animation: prixClipFix 2s linear infinite ;
+  }
+
+  @keyframes rotate {
+    100%   {transform: rotate(360deg)}
+  }
+
+  @keyframes prixClipFix {
+      0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+      25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+      75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+      100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+  }
+.nav{
+    position: fixed;
+    left: -245px;
+    width: 300px;
+    z-index: 9999999999999;
+    transition: all 0.5s;
+}
+.menu-link{
+    height: 100vh;
+    position: relative;
+  
+}
+.menu-link ul{
+list-style: none;
+ transition: all 0.5s;
+}
+.menu-link li{
+   
+     transition: all 0.5s;
+    }
+    
+
+.menu-link a{
+ text-decoration: none;
+
+ color: #fff;
+ font-size: 17px;
+ line-height: 50px;
+ overflow: hidden;
+ transition: all 0.5s;
+ }
+    .menu-icon {
+     
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 20%;
+    }
+/* sm */
+
+
+    .logo{
+    width: 80%;
+    }
+    .icon-nav{
+        position: absolute;
+        bottom: 0;
+        }
+
+    .text-nav{
+    position: absolute;
+    bottom: 0;
+    }
+ 
+    
+.meal-layer{
+        width: 100%;
+        height: 100%;
+        background-color: #f9f6f6ca;
+        position: absolute;
+        top: 100%;
+        z-index: 11;
+        transition: .5s;
+    }
+ 
+.meal:hover .meal-layer{
+    top: 0;
+}
+.mealDescription:hover .meal-layer{
+    top: 0;
+}
+.btn-meal a{
+color: #fff;
+text-decoration: none;
+}
+

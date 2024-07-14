@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+<body class="bg-black">
+    <div class="loading d-flex justify-content-center align-items-center d-none">
+        <span class="loader"></span>
+    </div>
+<div class="nav bg-dark  d-flex justify-content-between align-items-start flex-nowrap">
+<div class=" menu-link mt-3  ps-lg-2  w-75  d-flex justify-content-start align-items-start flex-column">
+
+     
+ <div class="links">
+    <ul class=" ps-3">
+        <li><a  class="Search ">Search</a></li>
+        <li><a  class="Categories"  >Categories</a></li>
+        <li><a  class="Area ">Area</ac></li>
+        <li><a  class="Ingredients " >Ingredients</a></li>
+        <li><a  class="Contact ">Contact Us</a></li>
+    </ul>
+ </div>
+ 
+ <div class="text-nav mb-3">
+    <div class=" mb-3">
+        <i class="fa-brands fa-facebook text-light pe-2 fs-5"></i>
+        <i class="fa-brands fa-twitter text-light  pe-2 fs-5"></i>
+        <i class="fa-brands fa-dribbble text-light fs-4"></i>
+     </div>
+    <p class="text-light">Copyright Â© 2019 All Rights
+        Reserved.</p>
+ </div>
+    
+</div>
+<div  class="menu-icon  bg-light d-flex justify-content-between flex-column">
+    <div class=" pt-3 d-flex justify-content-center align-items-center">
+          <img src="../img/logo.png" class="logo" alt="">
+    </div>
+    <div class="menu px-2  d-flex justify-content-center align-items-center">
+     <div class="closebtn d-none">   <i class=" fa-solid fa-xmark  fs-2"></i></div>
+   <div class="bars">  <i class=" fa-solid fa-bars fs-2 "></i></div>
+    </div>
+    <div class="d-flex flex-column">
+        <i class="fa-solid fa-globe fs-5 pb-2"></i>
+        <i class="fa-solid fa-share-nodes fs-5  pb-3"></i>
+    </div>
+ </div>
+</div>
+
+
+    <div class="container pt-5 ">
+     <div class="row text-light" id="Categories">
+    
+     </div>
+     </div>
+    </div>
+
+    <div class="Area 
+     ">
+        <div class="container pt-5 ">
+         <div class="row text-light" id="Area">
+        
+         </div>
+         </div>
+        </div>
+
+        
+    <div class="Areax d-none">
+        <div class="container pt-5 ">
+         <div class="row text-light g-3" id="Areax">
+        
+         </div>
+         </div>
+        </div>
+
+
+<div class="ingredients d-none  pt-5">
+        <div class="container ">
+         <div class="row text-light" id="ingredients">
+        
+         </div>
+         </div>
+        </div>
+
+
+        <div class="ingredientsMeals d-none pt-5">
+            <div class="container ">
+             <div class="row text-light g-3
+             " id="ingredientsMeals">
+           
+             </div>
+             </div>
+            </div>
+
+
+            <div class="mealData d-none pt-5">
+                <div class="container ">
+                 <div class="row text-light g-3" id="meal">
+               
+                 </div>
+                 </div>
+                </div>
+               
+                <div class="Search d-none pt-5">
+                    <div class="container ">
+                       
+                     </div>
+                 </div> -->
+                    
+                 <div class="display  ms-md-5">
+                    <div class="container ">
+                     <div class="row text-light g-3" id="display">
+                   
+                     </div>
+                     </div>
+                    </div>
+
+<div class="Search d-none" id="search">
+    <div class="container" >
+        <div class="row py-4 ">
+            <div class="col-md-6 ">
+                <input  id="byname" class="form-control bg-transparent text-white" type="text" placeholder="Search By Name">
+            </div>
+            <div class="col-md-6">
+                <input id="bylater" maxlength="1" class="form-control bg-transparent text-white" type="text" placeholder="Search By First Letter">
+            </div>
+        </div>
+    </div>
+    <div class="search-item  p-0 m-0">
+        <div class="container ">
+         <div class="row text-light g-3" id="search-item">
+       
+         </div>
+         </div>
+        </div>
+</div>
+
+                    
+                        <div class="contactUs min-vh-100 d-flex justify-content-center align-items-center d-none">
+                            <div class="container w-75 text-center">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <input id="nameInput"  type="text" class="form-control" placeholder="Enter Your Name">
+                                        <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                            Special characters and numbers not allowed
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="emailInput"  type="email" class="form-control " placeholder="Enter Your Email">
+                                        <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                            Email not valid *exemple@yyy.zzz
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="phoneInput"  type="text" class="form-control " placeholder="Enter Your Phone">
+                                        <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                            Enter valid Phone Number
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="ageInput"  type="number" class="form-control " placeholder="Enter Your Age">
+                                        <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                            Enter valid age
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input  id="passwordInput"  type="password" class="form-control " placeholder="Enter Your Password">
+                                        <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                            Enter valid password *Minimum eight characters, at least one letter and one number:*
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input  id="repasswordInput"  type="password" class="form-control " placeholder="Repassword">
+                                        <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                            Enter valid repassword 
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="submitBtn" type="button" class="btn btn-outline-danger px-2 mt-3">Submit</button>
+                            </div>
+                        </div> 
+              
+          
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/meals.main.js"></script>
+</body>
+
+</html>
